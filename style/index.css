@@ -1,1 +1,245 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS specific styling starts here */
+
+* {
+  font-size: 62.5%;
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.container-top {
+  display: flex;
+}
+.container-top-left {
+  width: 50%;
+  margin: 1%;
+}
+.container-top-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2%;
+}
+header {
+  background-color: lightgrey;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+h1 {
+  color: black;
+  font-size: 2rem;
+  font-family: "Architects Daughter";
+  text-transform: uppercase;
+}
+h2 {
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Architects Daughter";
+  text-transform: uppercase;
+}
+header nav {
+  display: flex;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  justify-content: flex-start;
+}
+a {
+  padding: 1%;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-family: "Architects Daughter";
+  text-decoration: none;
+}
+header a {
+  font-size: 0.8rem;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+p {
+  font-family: "Architects Daughter";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+p.caption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+img {
+  object-fit: contain;
+}
+.larger {
+  margin: 2%;
+  width: 25%;
+}
+.smaller {
+  margin: 1%;
+  width: 25%;
+  object-fit: contain;
+}
+footer {
+  background-color: lightgrey;
+  padding: 2rem;
+  /* display: flex; */
+}
+footer p {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* footer a {
+  padding: 2%;
+} */
+.footer-button {
+  text-align: center;
+  margin: 1rem auto;
+  /* padding-bottom: 2rem; */
+}
+.button {
+  text-align: left;
+  margin: 1.5rem 0;
+}
+/* nav.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+} */
