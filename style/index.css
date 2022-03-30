@@ -161,15 +161,15 @@ header {
   margin-bottom: 2%;
 }
 h1 {
+  font-family: "Architects Daughter", cursive;
   color: black;
   font-size: 2rem;
-  font-family: "Architects Daughter";
   text-transform: uppercase;
 }
 h2 {
+  font-family: "Architects Daughter", cursive;
   color: black;
   font-size: 1.2rem;
-  font-family: "Architects Daughter";
   text-transform: uppercase;
 }
 header nav {
@@ -185,7 +185,7 @@ a {
   color: black;
   border: 1px solid black;
   font-size: 1rem;
-  font-family: "Architects Daughter";
+  font-family: "Architects Daughter", cursive;
   text-decoration: none;
 }
 header a {
@@ -196,7 +196,7 @@ a:hover {
   color: white;
 }
 p {
-  font-family: "Architects Daughter";
+  font-family: "Architects Daughter", cursive;
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: left;
@@ -217,14 +217,45 @@ img {
   width: 25%;
   object-fit: contain;
 }
+.button {
+  text-align: left;
+  margin: 1.5rem 0;
+}
 footer {
   background-color: lightgrey;
   padding: 2rem;
   /* display: flex; */
 }
+footer.about {
+  background-color: lightgrey;
+  padding: 2rem;
+  display: flex;
+  /* justify-content: center; */
+}
+.container-bottom-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 1%;
+  justify-content: center;
+  text-align: center;
+}
+.container-bottom-right {
+  width: 48%;
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
 footer p {
   text-align: center;
   padding-bottom: 1rem;
+}
+footer h3 {
+  width: 100%;
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 1.2rem;
 }
 /* footer a {
   padding: 2%;
@@ -234,12 +265,45 @@ footer p {
   margin: 1rem auto;
   /* padding-bottom: 2rem; */
 }
-.button {
-  text-align: left;
-  margin: 1.5rem 0;
+footer a.contact {
+  padding: 1rem;
 }
-/* nav.social {
+nav.social {
   display: flex;
   justify-content: space-between;
-  margin-top: 10%;
+  margin-top: 2%;
+  column-gap: 5%;
+  width: 50%;
+}
+.social a:hover {
+  background-color: pink;
+}
+/* contact page CSS */
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5%;
+  margin: 5%;
+  height: 20vh;
+}
+/* .contact-right {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+.contact-left {
+  display: flex;
+  justify-content: center;
 } */
+p.contact {
+  text-align: left;
+  width: 60%;
+  margin-bottom: 0.5rem;
+}
+/* about page misc */
+p.about {
+  width: 80%;
+  margin: 1rem auto;
+}
