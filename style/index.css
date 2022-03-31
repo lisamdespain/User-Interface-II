@@ -136,7 +136,7 @@ table {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   margin: 2rem 0;
@@ -177,9 +177,9 @@ header nav {
   margin-left: 2%;
   margin-top: 2%;
   margin-bottom: 0%;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
-a {
+button, a{
   padding: 1%;
   background-color: white;
   color: black;
@@ -187,9 +187,18 @@ a {
   font-size: 1rem;
   font-family: "Architects Daughter", cursive;
   text-decoration: none;
+  
 }
-header a {
-  font-size: 0.8rem;
+a.about-me{
+  margin-top:2%;
+  margin-bottom:2%;
+  width:fit-content;
+}
+nav a {
+  font-size: 0.9rem;
+  padding:2%;
+  width:15%;
+  text-align:center;
 }
 a:hover {
   background-color: black;
@@ -214,7 +223,7 @@ img {
 }
 .smaller {
   margin: 1%;
-  width: 25%;
+  width: 23%;
   object-fit: contain;
 }
 .button {
@@ -308,9 +317,76 @@ p.about {
   margin: 1rem auto;
 }
 /* mobile queries */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+
   }
+  .smaller {
+    /* margin: 1%; */
+    width: 30%;
+    object-fit: contain;
+  }
+}
+@media (max-width: 500px) {
+  /* container of images */
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;
+  }
+  /* how big the images should be */
+  .smaller {
+    /* margin: 1%; */
+    width: 46%;
+    object-fit: contain;
+    /* margin:1% auto; */
+    /* align-items:center; */
+    text-align:center; 
+  }
+  /* the about me on main page */
+  .container-top {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container-top-left {
+    width: 100%;
+    }
+  .container-top-right {
+    width: 100%;
+    text-align:center;
+    align-items:center;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    }
+    h1{
+      text-align:center;
+    }
+    footer.about {
+      max-width:100%;
+      margin:0;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .container-bottom-left {
+      width:100%;
+      margin:2% auto;
+      text-align:center;
+      justify-content: center;
+    }
+    .container-bottom-right {
+      width:100%;
+      margin:0;
+    }
+    nav.social {
+      width: 100%;
+    }
+    p.caption {
+      
+      font-size: 1rem;
+    }
 }
