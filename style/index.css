@@ -307,3 +307,10 @@ p.about {
   width: 80%;
   margin: 1rem auto;
 }
+/* mobile queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
